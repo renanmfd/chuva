@@ -16,9 +16,11 @@
   </head>
   <body>
     <div id="page">
+      {% include 'regions/header.twig' with header %}
       <div class="container">
         <h1>Hello, world! {{ title }}</h1>
       </div>
+      {% include 'regions/footer.twig' with footer %}
     </div>
     {% include 'header/scripts.twig' with scripts %}
   </body>

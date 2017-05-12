@@ -1,5 +1,6 @@
 {
   "title": "Cartoon Network",
+  "logo": "img/logo.png",
   "metatags": [
     {
       "label": "charset",
@@ -33,5 +34,41 @@
     {
       "path": "js/script.js"
     }
-  ]
+  ],
+  "header": {
+    "schedule": {
+      "time": "14:00",
+      "title": "O Incrível mundo de Gunball"
+    },
+    "adImage": "img/cartoon-network-ad.jpg"
+  },
+  "footer": {
+    "text": "",
+    "menu": [
+      {
+        "title": "Guia para pais",
+        "link": "http://google.com/"
+      },
+      {
+        "title": "Dicas de segurança",
+        "link": "http://google.com/"
+      },
+      {
+        "title": "Programação",
+        "link": "http://google.com/"
+      },
+      {
+        "title": "Programação efetivamente veiculada",
+        "link": "http://google.com/"
+      },
+      {
+        "title": "Programação efetivamente veiculada (HD)",
+        "link": "http://google.com/"
+      },
+      {
+        "title": "Ajuda",
+        "link": "http://google.com/"
+      }
+    ]
+  }
 }

@@ -1,0 +1,28 @@
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12">
+        <div class="footer-logo">
+          <img src="{{ logo }}" alt="{{ title }}" />
+        </div>
+        <div class="footer-text">
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <div class="footer-menu">
+          <ul>
+            {% import "../components/macros.twig" as macro %}
+            {% for item in menu %}
+              <li>
+                <a href="{{ item.link }}" title="{{ item.title }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
