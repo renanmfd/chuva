@@ -178,6 +178,14 @@ if (!String.prototype.startsWith) {
       .pipe(cache(imageMin()))
       .pipe(gulp.dest(config.build + '/img/'));
   });
+  
+  /**
+   * Font folder copy.
+   */
+  gulp.task('fonts', function () {
+    gulp.src([config.source + '/fonts/*'])
+      .pipe(gulp.dest(config.build + '/fonts/'));
+  });
 
   /**
    * Browser sync watch.
@@ -192,5 +200,5 @@ if (!String.prototype.startsWith) {
     gulp.watch(config.source + '/js/**/*.js', ['js']);
   });
 
-  gulp.task('default', ['twig', 'less', 'js', 'img', 'watch']);
+  gulp.task('default', ['twig', 'less', 'js', 'img', 'fonts', 'watch']);
 }());
