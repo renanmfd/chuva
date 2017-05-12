@@ -1,0 +1,3 @@
+{% for meta in metatags %}
+  <meta {% if meta.label %}{{ meta.label }}{% else %}content{% endif %}="{{ meta.content}}"{% if meta.value %} value="{{ meta.value }}"{% endif %}>
+{% endfor %}

@@ -1,0 +1,5 @@
+<style media="all" rel="stylesheet">
+  {% for style in styles %}
+    @import url("{{ style.path }}");
+  {% endfor %}
+</style>

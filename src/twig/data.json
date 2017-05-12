@@ -1,0 +1,37 @@
+{
+  "title": "Cartoon Network",
+  "metatags": [
+    {
+      "label": "charset",
+      "content": "utf-8"
+    },
+    {
+      "label": "http-equiv",
+      "content": "X-UA-Compatible",
+      "value": "IE=edge"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    }
+  ],
+  "styles": [
+    {
+      "path": "components/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "path": "css/styles.min.css"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "components/jquery/dist/jquery.min.js"
+    },
+    {
+      "path": "components/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "path": "js/script.js"
+    }
+  ]
+}

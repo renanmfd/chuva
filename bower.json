@@ -1,0 +1,30 @@
+{
+  "name": "chuva_front_test",
+  "description": "Teste de front-end para a empresa Chuva",
+  "main": "app/index.html",
+  "authors": [
+    "Renan Dias"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "npm",
+    "gulp",
+    "html",
+    "css",
+    "js"
+  ],
+  "homepage": "https://github.com/renanmfd/chuva",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
