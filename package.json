@@ -1,15 +1,15 @@
 {
-  "name": "Chuva test",
+  "name": "chuva_test",
   "version": "1.0.0",
-  "description": "Gulp base TWIG+LESS+JS",
+  "description": "Gulp base TWIG+LESS+JS for Chuva font-end test",
   "main": "app/index.html",
   "scripts": {
-    "start": "node server.js",
+    "start": "gulp",
     "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
-    "url": "no repo"
+    "url": "git@github.com:renanmfd/chuva.git"
   },
   "keywords": [
     "nodejs",
