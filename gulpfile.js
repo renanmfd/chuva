@@ -1,22 +1,13 @@
 /*jslint browser: true, devel: true, node: true, rhino: false, nomen: true,
-         regexp: true, unparam: true, indent: 4, maxlen: 80*/
-
-// Polyfill
-if (!String.prototype.startsWith) {
-  String.prototype.startsWith = function (searchString, position) {
-    'use strict';
-    position = position || 0;
-    return this.indexOf(searchString, position) === position;
-  };
-}
+         regexp: true, unparam: true, indent: 2, maxlen: 80*/
 
 /**
- * @author Tursites / Renan
+ * @author Renan Dias - renanmfd@gmail.com
  *
  * GULP
  * -- HTML
- *    > Jade
- *    > Jade lint
+ *    > Twig
+ *    > Twig lint
  * -- CSS
  *    > CSSLint (https://github.com/lazd/gulp-csslint)
  *    > Sourcemaps (https://github.com/floridoo/gulp-sourcemaps)
@@ -31,8 +22,8 @@ if (!String.prototype.startsWith) {
  *    > Uglify (https://github.com/terinjokes/gulp-uglify)
  * -- Images
  *    > ImageMin
- * -- Favicons
- *    > Favicons
+ * -- Fonts
+ *    > Only copy the from src/ to app/.
  */
 (function gulpClosure() {
   'use strict';
