@@ -70,7 +70,6 @@
 
     // Imaging tools.
     imageMin = require('gulp-imagemin'),
-    favicons = require("gulp-favicons"),
 
     // Configuration.
     config = {
@@ -166,7 +165,7 @@
   gulp.task('img', function () {
     gulp.src([config.source + '/img/*'])
       .pipe(plumber(plumberOpt))
-      .pipe(cache(imageMin()))
+      .pipe(imageMin())
       .pipe(gulp.dest(config.build + '/img/'));
   });
   
