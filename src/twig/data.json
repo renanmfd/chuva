@@ -1,6 +1,6 @@
 {
   "title": "Cartoon Network",
-  "logo": "img/logo.png",
+  "logo": "img/logo.jpg",
   "metatags": [
     {
       "label": "charset",
@@ -43,7 +43,7 @@
     "adImage": "img/cartoon-network-ad.jpg"
   },
   "footer": {
-    "text": "",
+    "text": "Jogos e videos grátis de Ben 10, Hora de Aventura com Finn e Jake, Apenas um Show, A Turma da Mônica, O Incrível Mundo de Gunball, Steven Universo, Titio Avô, Toonix e muito mais!",
     "menu": [
       {
         "title": "Guia para pais",
@@ -70,5 +70,78 @@
         "link": "http://google.com/"
       }
     ]
+  },
+  "schedule": {
+    "programs": [
+      {
+        "id": 1,
+        "name": "Apenas Um Show",
+        "image": "img/show-apenas-um-show.png",
+        "description": "O programa tem como protagonistas dois zeladores de um parque: um gaio-azul de mais de 1,80 m de altura chamado Mordecai, e um guaxinim chamado Rigby. Mordecai e Rigby são melhores amigos que passam seus dias tentando se divertir, de todas as maneiras possíveis."
+      },{
+        "id": 2,
+        "name": "Titio Avô",
+        "image": "img/show-titio-avo.png",
+        "description": "Titio Avô é o tio e o avô mágico favorito de toda a Terra. Sua missão é viajar pelo mundo ajudando e mudando a vida das pessoas para sempre. Em suas aventuras, ele conta com a ajuda dos amigos para solucionar problemas: Sr. Gus, Steve Pizza, Tigresa Voadora Gigante Surreal e Pochétio. Juntos, eles viajam em um trailer, que é o lar mágico de Titio Avô sobre rodas e, além de conseguir rodar sozinho, é um centro de diversão e de salas malucas."
+      },{
+        "id": 3,
+        "name": "Steven Universo",
+        "image": "img/show-steven-universo.png",
+        "description": "Acredite em Steven! Steven Universo é um herói metade humano metade Gem que está aprendendo a salvar o mundo com os poderes mágicos que vêm do seu umbigo. Steven pode até não ser tão poderoso quanto as Crystal Gems. Ou tão esperto. Mas isso não o impede de se unir a Garnet, Ametista e Pérola em suas aventuras mágicas – nas quais Steven sempre encontra uma forma surpreendente de salvar o dia."
+      },{
+        "id": 4,
+        "name": "Historietas Assombradas",
+        "image": "img/show-historietas-assombradas.png",
+        "description": "Pepe vive com a Vó, uma espécie de feiticeira que fabrica itens mágicos para vender pela Internet. A convivência com esse universo envolve o garoto e seus amigos em aventuras repletas de humor, onde Pepe enfrentará todo o tipo de criatura sobrenatural."
+      },{
+        "id": 5,
+        "name": "Hora de Aventura",
+        "image": "img/show-hora-de-aventura.png",
+        "description": "Pronto para se divertir a valer? Junte-se a Finn, um menino superdescolado, e Jake, o cão mais sábio do mundo, em aventuras pra lá de divertidas na Terra do Ooo. Quando estes dois melhores amigos se juntam e dizem as palavras mágicas Hora de Aventura, tudo pode acontecer!"
+      },{
+        "id": 6,
+        "name": "Distroller",
+        "image": "img/show-distroller.png",
+        "description": "Em um universo cheio de cor, com a combinação perfeita de fantasia e realidade. Distroller descobre o extraordinário dentro do ordinário. No mundo de Distroller, todos os personagem estarão com você através de aventuras e experiências cheias de humor e irreverência, fazendo da diversão uma matéria escolar obrigatória. Distroller é rir de si mesmo e dos seus traumas. Bem-vindo ao mundo de Distroller!!!"
+      },{
+        "id": 7,
+        "name": "Dragões - Pilotos de Berk",
+        "image": "img/show-dragoes.png",
+        "description": "A série acompanha as aventuras de Soluço, do seu dragão, Banguela, e do bando adolescente de treinadores de dragão enquanto eles tentam integrar essas feras ameaçadoras e selvagens à sociedade, na ilha de Berk. Eles não apenas aprenderão mais sobre seus dragões como também descobrirão novas espécies e lutarão contra inimigos enquanto exploram mundo desconhecidos."
+      },{
+        "id": 8,
+        "name": "As Meninas Super Poderosas",
+        "image": "img/show-as-meninas-super-poderosas.png",
+        "description": "Florzinha, Lindinha e Docinho são as Meninas Superpoderosas. Elas são três garotinhas com uma missão: salvar o mundo antes da hora de dormir. As garotas morem com o Professor Utônio em uma casa no subúrbio de Townsville aonde elas enfrentam caras malvados e musculosos, monstros e outros vilões grotescos."
+      }
+    ],
+    "days": {
+      "1": {
+        "00h": [1, 2, 8, 4],
+        "01h": [8, 5, 3, 4],
+        "02h": [6, 2, 5, 3],
+        "03h": [1, 2, 8, 7],
+        "04h": [7, 5, 6, 4],
+        "05h": [1, 2, 1, 8],
+        "06h": [5, 6, 3, 4],
+        "07h": [1, 2, 5, 4],
+        "08h": [8, 2, 1, 7],
+        "09h": [1, 5, 7, 4],
+        "10h": [1, 6, 3, 7],
+        "11h": [4, 2, 5, 1],
+        "12h": [1, 8, 6, 4],
+        "13h": [5, 2, 3, 1],
+        "14h": [1, 2, 3, 4],
+        "15h": [1, 7, 6, 5],
+        "16h": [8, 2, 5, 4],
+        "17h": [1, 6, 7, 4],
+        "18h": [4, 8, 3, 4],
+        "19h": [1, 2, 6, 7],
+        "20h": [5, 2, 3, 4],
+        "21h": [2, 5, 8, 6],
+        "22h": [1, 2, 3, 4],
+        "23h": [5, 7, 6, 8]
+      }
+    }
   }
 }

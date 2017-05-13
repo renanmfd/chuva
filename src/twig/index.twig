@@ -17,9 +17,12 @@
   <body>
     <div id="page">
       {% include 'regions/header.twig' with header %}
-      <div class="container">
-        <h1>Hello, world! {{ title }}</h1>
-      </div>
+      <main class="content">
+        <div class="container">
+          <h1 class="hidden">{{ title }}</h1>
+          {% include 'page/schedule.twig' with schedule %}
+        </div>
+      </main>
       {% include 'regions/footer.twig' with footer %}
     </div>
     {% include 'header/scripts.twig' with scripts %}
