@@ -1,0 +1,145 @@
+#cnModal {
+  .modal-content {
+    position: relative;
+    background-color: @red;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .modal-header {
+    margin-top: 40px;
+    padding: 15px 20px;
+    background-color: @yellow;
+
+    .close {
+      float: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 2px 3px 2px 2px;
+      background-color: @blue;
+      color: @white;
+      border-radius: 4px;
+      opacity: 1;
+      transition: opacity .3s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+      .glyphicon {
+        font-size: 18px;
+      }
+    }
+    .image {
+      width: 120px;
+      transform: translateX(-50px);
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 10px solid @blue;
+      background-color: @white;
+      overflow: hidden;
+      z-index: 10;
+
+      @media screen and (min-width: @screen-sm) {
+        margin-left: 0;
+        transform: none;
+      }
+    }
+    .modal-title {
+      max-width: 380px;
+      margin: 0 auto;
+      padding: 15px;
+      padding-top: 15px;
+      margin-top: -20px;
+      background-color: @blue;
+      
+      @media screen and (min-width: @screen-sm) {
+        padding: 5px 10px 5px 50px;
+        margin: 0;
+        margin-left: -45px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      
+      .title {
+        margin: 0 0 5px;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: @white;
+      }
+      .original {
+        margin: 0;
+        font-family: @sec-font;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: @white;
+      }
+      .slogan {
+        font-family: @sec-font;
+        font-size: 20px;
+        color: @white;
+      }
+    }
+    .classification {
+      position: absolute !important;
+      top: 80px;
+      right: 50%;
+      transform: translateX(100px);
+      width: 60px;
+      padding: 5px 2px;
+
+      background-color: @blue;
+      border: 4px solid @white;
+      border-radius: 10px;
+      text-align: center;
+      
+      @media screen and (min-width: @screen-sm) {
+        position: relative !important;
+        top: 0;
+        right: 0;
+        margin-left: 30px;
+        transform: none;
+      }
+
+      span {
+        font-family: @sec-font;
+        font-size: 32px;
+        color: @white;
+      }
+    }
+    .image,
+    .modal-title,
+    .classification {
+      display: block;
+      vertical-align: middle;
+      position: relative;
+
+      @media screen and (min-width: @screen-sm) {
+        display: inline-block;
+      }
+    }
+  }
+  .modal-body {
+    color: @white;
+    padding: 15px 20px;
+
+    * {
+      font-family: @sec-font;
+      font-size: 18px;
+    }
+    .division {
+      background-color: @yellow;
+      height: 4px;
+      width: 120%;
+      margin-left: -10%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    time {
+      font-size: 26px;
+    }
+    .description p {
+      font-size: 20px;
+    }
+  }
+}

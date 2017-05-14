@@ -1,0 +1,68 @@
+.calendar {
+  font-size: 0;
+  text-align: center;
+
+  @media screen and (min-width: @screen-sm) {
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .calendar-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    padding: 0 2px;
+    margin-bottom: 4px;
+    
+    @media screen and (min-width: @screen-sm) {
+      width: 120px;
+      height: 120px;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+      text-align: center;
+      font-size: 28px;
+      color: @white;
+      text-decoration: none;
+      opacity: 0.5;
+      transition: all .3s ease-in-out;
+      
+      @media screen and (min-width: @screen-sm) {
+        font-size: 36px;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.color-1 a {
+      background-color: @blue;
+    }
+    &.color-2 a {
+      background-color: @red;
+    }
+    &.color-0 a {
+      background-color: @yellow;
+    }
+    &.next {
+      .glyphicon {
+        font-size: 60px;
+        color: @gray;
+        
+        @media screen and (min-width: @screen-sm) {
+          font-size: 80px;
+        }
+      }
+    }
+    &.current a {
+      background-color: @black;
+      color: @blue;
+    }
+    &.active a {
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+}

@@ -23,6 +23,7 @@
     display: inline-block;
     vertical-align: middle;
     position: relative;
+    height: 25px;
     
     @media screen and (min-width: @screen-md) {
       display: block;
@@ -39,9 +40,12 @@
       position: absolute;
       right: 0;
       top: 0;
-      padding: 3px 6px;
-      background-color: @yellow;
       
+      a {
+        display: block;
+        padding: 3px 6px;
+        background-color: @yellow;
+      }
       .glyphicon {
         color: @black;
       }
