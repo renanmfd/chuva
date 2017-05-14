@@ -60,7 +60,7 @@
         "default-case": 1,
         "dot-notation": 1,
         "dot-location": [
-            1,
+            0,
             "object"
         ],
         "eqeqeq": 0,
