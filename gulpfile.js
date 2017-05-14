@@ -86,10 +86,10 @@
   /**
    * HTML build.
    */
-  gulp.task('twig-lint', function () {
+  gulp.task('twig-lint', function twigLint() {
     
   });
-  gulp.task('twig', ['twig-lint'], function htmlTask() {
+  gulp.task('twig', ['twig-lint'], function twigTask() {
     return gulp.src(config.source + '/twig/index.twig')
       .pipe(plumber(plumberOpt))
       .pipe(twig({
@@ -105,7 +105,7 @@
   /**
    * CSS build.
    */
-  gulp.task('less-lint', function cssTask() {
+  gulp.task('less-lint', function lessLintTask() {
     return gulp.src(config.source + '/less/**/*.less')
       .pipe(plumber(plumberOpt))
       .pipe(lesshint({
@@ -116,7 +116,7 @@
         gutil.log('Less lint error');
       });
   });
-  gulp.task('less', ['less-lint'], function cssTask() {
+  gulp.task('less', ['less-lint'], function lessTask() {
     return gulp.src(config.source + '/less/styles.less')
       .pipe(plumber(plumberOpt))
       .pipe(sourcemaps.init())
@@ -136,7 +136,7 @@
   /**
    * Javascript build.
    */
-  gulp.task('js-lint', function () {
+  gulp.task('js-lint', function jsLintTask() {
     return gulp.src([config.source + '/js/**/*.js'])
       .pipe(plumber(plumberOpt))
       .pipe(eslint('.eslintrc'))
@@ -162,7 +162,7 @@
   /**
    * Image build.
    */
-  gulp.task('img', function () {
+  gulp.task('img', function imgTask() {
     gulp.src([config.source + '/img/*'])
       .pipe(plumber(plumberOpt))
       .pipe(imageMin())
@@ -172,7 +172,7 @@
   /**
    * Font folder copy.
    */
-  gulp.task('fonts', function () {
+  gulp.task('fonts', function fontsTask() {
     gulp.src([config.source + '/fonts/*'])
       .pipe(gulp.dest(config.build + '/fonts/'));
   });
