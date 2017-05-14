@@ -1,0 +1,40 @@
+<div class="details color-{{ ("now"|date('g') + 1) % 3 }}">
+  {% set hour = "now"|date('H') %}
+  <h2 class="details-title">{{ hour }}h</h2>
+
+  <div class="details-items">
+    {% for time in schedule.days[1][hour] %}
+      {% set show = schedule.programs[time] %}
+      <div class="details-item">
+        <a href="#" class="details-item-link" data-id="{{ show.id }}"> 
+          <div class="item-time">
+            <span>{{ hour }}:{{ "%02d"|format((loop.index - 1)* 15) }}</span>
+          </div>
+          <div class="item-image">
+            <img src="{{ show.image }}" alt="{{ show.name }}" />
+          </div>
+          <div class="item-title">
+            <span>{{ show.name }}</span>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="details-item-template hidden">
+    <div class="details-item" style="display:none;">
+      <a href="#" class="details-item-link" data-id="@id"> 
+        <div class="item-time">
+          <span>@time</span>
+        </div>
+        <div class="item-image">
+          <img data-src="@image" alt="@name" />
+        </div>
+        <div class="item-title">
+          <span>@name</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>

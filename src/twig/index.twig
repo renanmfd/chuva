@@ -3,6 +3,7 @@
   <head>
     {% include 'header/metatags.twig' with metatags %}
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>{{ title }}</title>
 
     {% include 'header/styles.twig' with styles %}
@@ -16,12 +17,12 @@
   </head>
   <body>
     <div id="page">
-      {% include 'regions/header.twig' with header %}
+      {% include 'regions/header.twig' %}
       <main class="content">
         <div class="container">
-          <h1 class="hidden">{{ title }}</h1>
-          {% include 'page/schedule.twig' with schedule %}
+          {% include 'page/schedule.twig' %}
         </div>
+        {% include 'page/components/modal.twig'%}
       </main>
       {% include 'regions/footer.twig' with footer %}
     </div>

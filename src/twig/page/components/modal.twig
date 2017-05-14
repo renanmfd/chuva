@@ -1,0 +1,40 @@
+<!-- Modal -->
+<div class="modal fade" id="cnModal" tabindex="-1" role="dialog" aria-labelledby="cnModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+        <div class="image"><img class="responsive-image" /></div>
+        <div class="modal-title">
+          <h3 class="title"></h3>
+          <h4 class="original"></h4>
+          <span class="slogan"></span>
+        </div>
+        <div class="classification"><span>10</span></div>
+      </div>
+      <div class="modal-body">
+        <time>
+            {% set week = 'now'|date('l') %}
+            {% set weekTranslation = {'Sunday': 'Domingo', 'Monday': 'Segunda', 'Thusday': 'Terça',
+              'Wednesday': 'Quarta', 'Thursday': 'Quinta', 'Friday': 'Sexta', 'Saturday': 'Sabado'} %}
+            {{ weekTranslation[week] }},&nbsp;{{ 'now'|date('j') }}
+        </time>
+        <div class="description"><p></p></div>
+        <div class="division"></div>
+        <div class="info">
+          <div><strong>Hora de Inicio/Fim:</strong> 17:30 - 17:45</div>
+          <div><strong>Ano de Produção:</strong> 2014</div>
+          <div><strong>País de Origem:</strong> Estados Unidos</div>
+          <div><strong>Classificação do Conteúdo:</strong> Obra não publicitária americana, constituinte de espaço qualificado e independente</div>
+          <div><strong>Classificação Indicativa:</strong> 10 anos</div><br>
+          <div><strong>Gênero:</strong> Animação, Comédia</div>
+          <div><strong>Diretor:</strong> Juliano Enrico</div>
+          <div><strong>Casting:</strong></div>
+        </div>
+        <div class="division"></div>
+      </div>
+    </div>
+  </div>
+</div>

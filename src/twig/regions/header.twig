@@ -5,10 +5,19 @@
 
         <div class="col-xs-12 col-md-3">
           <div class="schedule-now">
-            <div class="schedule-now-time">{{ header.schedule.time }}</div>
+            {% set hour = "now"|date('H') %}
+            {% set quarter = ("now"|date('i') / 15)|round(0, 'floor') %}
+            <div class="schedule-now-time">{{ hour }}:{{ '%02d'|format(quarter * 15) }}</div>
             <div class="schedule-now-title">
-              <div class="text">{{ header.schedule.title }}</div>
-              <div class="icon"><span class="glyphicon glyphicon-plus"></span></div>
+              
+              {% set showId = schedule.days["1"][hour][quarter] %}
+              <div class="text vertical-align">
+                <span>{{ schedule.programs[showId].name }}</span>
+              </div>
+              <div class="icon">
+                <a href="#" class="current-show-link" title="Veja mais">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -30,9 +39,9 @@
   <div class="topbar">
     <div class="container">
       
-      <div class="logo">
+      <a href="#" class="logo">
         <img src="{{ logo }}" alt="{{ title }}">
-      </div>
+      </a>
       
       <div class="search">
         <a href="#" class="btn btn-default btn-search">Procurar</a>

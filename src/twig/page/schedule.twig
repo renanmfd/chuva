@@ -1,1 +1,21 @@
-<h1>{{ 'now'|date('l j')}}</h1>
+<h1 class="page-title">
+  {% set week = 'now'|date('l') %}
+  {% set weekTranslation = {'Sunday': 'Domingo', 'Monday': 'Segunda', 'Thusday': 'Terça',
+    'Wednesday': 'Quarta', 'Thursday': 'Quinta', 'Friday': 'Sexta', 'Saturday': 'Sabado'} %}
+  {{ weekTranslation[week] }}&nbsp;{{ 'now'|date('j') }}
+</h1>
+
+<div class="row">
+  <script>
+    var schedule = JSON.parse('{{ schedule|json_encode() }}');
+  </script>
+  <div class="col-xs-12 col-sm-7">
+    {% include 'schedule/calendar.twig' %}
+  </div>
+  <div class="col-xs-12 col-sm-5">
+    {% include 'schedule/details.twig' %}
+  </div>
+  <div class="col-xs-12">
+    {% include 'schedule/carousel.twig' %}
+  </div>
+</div>

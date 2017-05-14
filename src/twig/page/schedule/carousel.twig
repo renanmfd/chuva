@@ -1,0 +1,26 @@
+<div class="carousel-wrapper">
+  <div id="carousel" class="carousel slide multi-item-carousel" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      {% for show in schedule.programs %}
+        <div class="carousel-item item{% if loop.first %} active {% endif %} id-{{ show.id }}">
+          <a href="#" class="carousel-item-link" title="{{ show.name }}" data-id="{{ show.id }}">
+            <img src="{{ show.image|replace({'.png': '-2.png'}) }}" alt="{{ show.name }}" />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>

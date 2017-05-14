@@ -1,0 +1,19 @@
+<div class="calendar">
+  {% for hour in 0..23 %}
+    <div class="calendar-item hour color-{{ loop.index % 3 }}{% if hour == "now"|date('G') %} current active{% endif %}">
+      <div class="vertical-align">
+        <a href="#" title="{{ hour }}h" data-time="{{ "%02d"|format(hour) }}" 
+           data-color="{{ loop.index % 3 }}">
+          {{ "%02dh"|format(hour) }}
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="calendar-item next">
+    <div class="vertical-align">
+      <a href="#" title="Próximo">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div>
